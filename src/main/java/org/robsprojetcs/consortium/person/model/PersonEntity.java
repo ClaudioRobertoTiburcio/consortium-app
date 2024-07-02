@@ -35,6 +35,9 @@ public class PersonEntity implements GenericEntity<PersonEntity> {
     @NotNull(message = "postalCode must not be null")
     private String postalCode;
 
+    @NotNull(message = "celNumber must not be null")
+    private String celNumber;
+
     private String district;
 
     @Override
@@ -44,5 +47,6 @@ public class PersonEntity implements GenericEntity<PersonEntity> {
         this.city = source.getCity();
         this.postalCode = source.getPostalCode();
         this.district = source.getDistrict();
+        this.celNumber = source.getCelNumber();
     }
 }
